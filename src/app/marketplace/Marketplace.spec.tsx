@@ -9,7 +9,7 @@ describe('Marketplace', () => {
 			// Act
 			const { getByTestId } = render(<Marketplace />);
 			// Assert
-			expect(MARKETPLACE_TESTID).toBeInTheDocument();
+			expect(getByTestId(MARKETPLACE_TESTID)).toBeInTheDocument();
 		});
 	});
 });

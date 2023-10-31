@@ -56,16 +56,22 @@
 			"error",
 			"always"
 		],
-		// "import/extensions": [
-		// 	"error",
-		// 	"never",
-		// 	{
-		// 		"js": "never",
-		// 		"jsx": "never",
-		// 		"ts": "never",
-		// 		"tsx": "never"
-		// 	}
-		// ],
+		"import/extensions": [
+			"error",
+			"never",
+			{
+				"js": "never",
+				"jsx": "never",
+				"ts": "never",
+				"tsx": "never",
+				"pattern": {
+					"const": "always",
+					"model": "always",
+					"testid": "always",
+					"util": "always"
+				}
+			}
+		],
 		"import/no-unresolved": "off",
 		"import/prefer-default-export": "warn",
 		"indent": [
