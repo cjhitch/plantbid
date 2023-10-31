@@ -1,0 +1,79 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "Api/*": [
+        "./src/Api/*"
+      ],
+      "App/*": [
+        "./src/app/*"
+      ],
+      "Assets/*": [
+        "./src/assets/*"
+      ],
+      "Components/*": [
+        "./src/components/*"
+      ],
+      "Hooks/*": [
+        "./src//hooks/*"
+      ],
+      "Images/*": [
+        "./src/assets/images/*"
+      ],
+      "Pages/*": [
+        "./src/pages/*"
+      ],
+      "Model/*": [
+        "./src/model/*"
+      ],
+      "Store": [
+        "./src/store/"
+      ],
+      "TestIds": [
+        "./src/TestIds.ts"
+      ],
+      "Util/*": [
+        "./src/util/*"
+      ],
+      "Ui/*": [
+        "./src/components/ui/*"
+      ],
+      "@/*": [
+        "./src/*"
+      ]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "./jest-setup.ts",
+    "./jest.config.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.js"
+  ]
+}

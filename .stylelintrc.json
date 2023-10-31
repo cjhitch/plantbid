@@ -1,0 +1,10 @@
+{
+	"extends": ["stylelint-config-standard", "stylelint-config-standard-scss"],
+	"rules": {
+		"color-function-notation": [
+			"modern",
+			{ "ignore": ["with-var-inside"] }
+		],
+		"media-feature-range-notation": "prefix"
+	}
+}

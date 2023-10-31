@@ -1,0 +1,1 @@
+this is where assets like scss and images go
