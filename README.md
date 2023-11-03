@@ -5,8 +5,9 @@ This is the nextjs template for dk plus
 To install start by pulling the repository onto your local machine. This can be done by visiting our repo and using the clone button.
 You may also run the following command in the folder of your choosing.
 
-For Best results you should clone this with renaming to match what it is being used for
-ie. git clone https://digikey@dev.azure.com/digikey/DK%20Plus/_git/dk_plus_next_template ConfigurablePart.SpaceshipBuilder.App
+For Best results you should clone this with renaming to match what it is being used for  
+ie.  
+`git clone https://digikey@dev.azure.com/digikey/DK%20Plus/_git/dk_plus_next_template ConfigurablePart.SpaceshipBuilder.App`
 
 ```
 dk_plus_next_template
