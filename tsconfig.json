@@ -24,7 +24,7 @@
     ],
     "paths": {
       "Api/*": [
-        "./src/Api/*"
+        "./src/app/api/*"
       ],
       "App/*": [
         "./src/app/*"
@@ -40,9 +40,6 @@
       ],
       "Images/*": [
         "./src/assets/images/*"
-      ],
-      "Pages/*": [
-        "./src/pages/*"
       ],
       "Model/*": [
         "./src/model/*"

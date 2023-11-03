@@ -1,0 +1,50 @@
+{
+	"unit test with imports": {
+		"prefix": "utimp",
+		"body": [
+			"import React from 'react';",
+			"import '@testing-library/jest-dom';",
+			"import '@testing-library/jest-dom/extend-expect';",
+			"import { render } from '@testing-library/react';",
+			"import { MemoryRouter } from 'react-router';",
+			"import { QueryClient, QueryClientProvider } from 'react-query';",
+			"",
+			"describe('', () => {",
+			"\tdescribe('', () => {",
+			"\t\tit('', () => {",
+			"\t\t\t// Arrange",
+			"\t\t\tconst queryClient = new QueryClient();",
+			"\t\t\t// Act",
+			"\t\t\tconst { getByTestId } = render(",
+			"\t\t\t\t<QueryClientProvider client={queryClient}>",
+			"\t\t\t\t\t<MemoryRouter>",
+			"\t\t\t\t\t\t$1",
+			"\t\t\t\t\t</MemoryRouter>",
+			"\t\t\t\t</QueryClientProvider>",
+			"\t\t\t);",
+			"\t\t\t// Assert",
+			"expect(getByTestId($2)).toBeInTheDocument();",
+			"});",
+			"\t});",
+			"});"
+		]
+	},
+	"use state": {
+		"prefix": "us",
+		"body": [
+			"const [ ${1}, set${1/(.*)/${1:/capitalize}/} ] = useState<$2>($3)"
+		]
+	},
+	"use effect": {
+		"prefix": "ue",
+		"body": ["useEffect(() => {", "\t$1", "}, []);"]
+	},
+	"console log debug": {
+		"prefix": "cld",
+		"body": "console.log('$1: ', $1);"
+	},
+	"console.log use effect": {
+		"prefix": "clu",
+		"body": ["useEffect(() => {", "\tconsole.log('$1: ', $1);", "}, [$1]);"]
+	}
+}

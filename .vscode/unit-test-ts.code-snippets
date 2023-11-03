@@ -1,0 +1,21 @@
+{
+	"unit test frame": {
+		"prefix": "unittest",
+
+		"body": [
+			"describe('', () => {",
+			"\tdescribe('', () => {",
+			"\t\tit('', () => {",
+			"\t\t\t// Arrange",
+			"\t\t\t// Act",
+			"\t\t\t// Assert",
+			"});",
+			"\t});",
+			"});"
+		]
+	},
+	"console log debug": {
+		"prefix": "cld",
+		"body": "console.log('$1: ', $1);"
+	}
+}
