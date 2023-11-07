@@ -72,6 +72,7 @@
 					"model": "always",
 					"testid": "always",
 					"util": "always",
+					"config": "always",
 					"scss": "always",
 					"css": "always"
 				}
