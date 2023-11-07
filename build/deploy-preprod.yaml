@@ -1,0 +1,25 @@
+app:
+    healthCheck:
+        path: /healthcheck
+        protocol: HTTP
+        port: 3000
+    networking:
+        ingress:
+            loadBalance: true
+            port: 3000
+    resources:
+        instances: 1
+        apm: CoreClr
+        requests:
+            cpu: 0.25
+            memory: 128
+        limits:
+            cpu: 3
+            memory: 256
+    name: dk_plus_next_template
+    domain: DP
+    role: trf
+    group: dkplus
+    version: 0
+    container:
+        image: dkplus/dk_plus_next_template

@@ -1,0 +1,24 @@
+resources:
+    repositories:
+        - repository: templates
+          type: git
+          name: Platform Tooling/PipelineTemplates
+
+name: $(Date:yyyyMMdd)$(Rev:.r)-$(SourceBranchName)
+
+trigger:
+    - master
+
+variables:
+    isMain: $[eq(variables['Build.SourceBranch'], 'refs/heads/master')]
+
+stages:
+    - stage:
+      jobs:
+          - template: npm/npm-build.yaml@templates
+            parameters:
+                SonarKey: $(Build.DefinitionName)
+                ProjectName: $(Build.DefinitionName)
+                TestCommand: test
+                NodeContainer: docker.digikey.us/devops/node:18
+                SonarSources: .

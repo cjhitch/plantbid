@@ -9,7 +9,8 @@
 		"plugin:react/recommended",
 		"plugin:jsx-a11y/recommended",
 		"standard-with-typescript",
-		"prettier"
+		"prettier",
+		"plugin:@next/next/recommended"
 	],
 	"parser": "@typescript-eslint/parser",
 	"overrides": [
@@ -37,6 +38,8 @@
 		// "@typescript-eslint/explicit-module-boundary-types": "error",
 		"@typescript-eslint/no-explicit-any": "error",
 		"@typescript-eslint/no-inferrable-types": 0,
+		"@typescript-eslint/prefer-nullish-coalescing": "off",
+		"@typescript-eslint/prefer-optional-chain": "error",
 		"@typescript-eslint/restrict-template-expressions": [
 			"warn"
 		],
@@ -48,6 +51,7 @@
 				"variableDeclarationIgnoreFunction": true
 			}
 		],
+		"@typescript-eslint/no-shadow": "error",
 		"arrow-body-style": [
 			"error",
 			"always"
@@ -58,7 +62,6 @@
 		],
 		"import/extensions": [
 			"error",
-			"never",
 			{
 				"js": "never",
 				"jsx": "never",
@@ -68,7 +71,9 @@
 					"const": "always",
 					"model": "always",
 					"testid": "always",
-					"util": "always"
+					"util": "always",
+					"scss": "always",
+					"css": "always"
 				}
 			}
 		],
@@ -90,6 +95,7 @@
 				"maxEOF": 1
 			}
 		],
+		"no-shadow": "off",
 		"quotes": [
 			"error",
 			"single",
@@ -115,7 +121,8 @@
 			}
 		],
 		"react/jsx-props-no-spreading": "off",
-		"react/prop-types": "off",
+		"react/prop-types": "off", // Since we do not use prop-types
+		"react/require-default-props": "off", // Since we do not use prop-types
 		"react-require-default-props": "off",
 		"react/react-in-jsx-scope": "off",
 		"semi": [
