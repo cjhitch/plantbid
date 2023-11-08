@@ -81,8 +81,7 @@ The following folder structure has been implemented as it seems to best suit our
 
 <span style="color:lightblue">|- public/</span>  
 <span style="color:lightblue">|- src/</span>&emsp;_contains code for frontend and api layer_  
-<span style="color:pink">&emsp;|-- app/</span>&emsp;_this is how nextjs does <a href="https://nextjs.org/docs/app/building-your-application/routing/defining-routes">pages</a> - all pages should be here and have a page.ts_  
-<span style="color:orange">&emsp;&emsp;|--- /api/</span>&emsp;_this is the folder that nextjs uses for all <a href="https://nextjs.org/docs/app/building-your-application/routing/route-handlers">api</a> calls_  
+<span style="color:pink">&emsp;|-- app/</span>&emsp;_this is how nextjs does <a href="https://nextjs.org/docs/app/building-your-application/routing/defining-routes">pages</a> - all pages should be here and have a page.ts_
 <span style="color:orange">&emsp;&emsp;|--- /Home/</span>&emsp;_main page for the app_  
 <span style="color:purple">&emsp;&emsp;&emsp;|---- /model/</span>&emsp;_model folder for this specific page/component_  
 <span style="color:green">&emsp;&emsp;&emsp;&emsp;|----- /Home.testid.ts</span>&emsp;_testids for this specific page/component_  
@@ -99,6 +98,8 @@ The following folder structure has been implemented as it seems to best suit our
 <span style="color:green">&emsp;&emsp;&emsp;&emsp;|----- /util/</span>&emsp;util folder for specific component*  
 <span style="color:pink">&emsp;|-- hooks/</span>&emsp;\_contains custom hooks*  
 <span style="color:pink">&emsp;|-- model/</span>&emsp;_models used between multiple files/components should be put in here_  
+<span style="color:pink">&emsp;|-- pages/</span>&emsp;_this should eventually go away - nextjs hasn't finished migrating all items to the app directory. this should ONLY be for api folder_
+<span style="color:orange">&emsp;&emsp;|--- /api/</span>&emsp;_this is the folder that nextjs uses for all <a href="https://nextjs.org/docs/app/building-your-application/routing/route-handlers">api</a> calls_  
 <span style="color:pink">&emsp;|-- store/</span>&emsp;_contains anything for state management available across the app_  
 <span style="color:pink">&emsp;|-- util/</span>&emsp;_utilities that are used between multiple files/components should be put in here_  
 <span style="color:lightblue">|- config files</span>  

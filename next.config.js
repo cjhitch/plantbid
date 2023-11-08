@@ -8,7 +8,7 @@ const nextConfig = {
 	) => {
 		config.resolve.alias = {
 			...config.resolve.alias,
-			Api: path.resolve(__dirname, 'src', 'app', 'api,'),
+			Api: path.resolve(__dirname, 'src', 'pages', 'api,'),
 			App: path.resolve(__dirname, 'src', 'app'),
 			Assets: path.resolve(__dirname, 'src', 'assets'),
 			Components: path.resolve(__dirname, 'src', 'components'),

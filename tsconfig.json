@@ -24,7 +24,7 @@
     ],
     "paths": {
       "Api/*": [
-        "./src/app/api/*"
+        "./src/pages/api/*"
       ],
       "App/*": [
         "./src/app/*"

@@ -1,0 +1,1 @@
+next js requires all /api calls to go in this folder

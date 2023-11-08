@@ -1,6 +1,6 @@
 app:
     healthCheck:
-        path: /healthcheck
+        path: /api/healthcheck
         protocol: HTTP
         port: 3000
     networking:
@@ -9,7 +9,6 @@ app:
             port: 3000
     resources:
         instances: 1
-        apm: CoreClr
         requests:
             cpu: 0.25
             memory: 128
