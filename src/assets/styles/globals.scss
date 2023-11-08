@@ -1,0 +1,25 @@
+@use 'ButtonComponent';
+
+:root {
+	--red: #ff2100;
+	--red--hover: #a20000;
+	--error: #cc0000;
+	--red--clicked: #890000;
+	--white: #fff;
+	--blurple-blue: #1a1552;
+	--link-blue: #221abb;
+	--onyx-grey: #222222;
+	--slate-grey: #444444;
+	--slate-grey-lighten: #4b4b4b;
+	--stone-grey: #666666;
+	--rain-grey: #a4a4a4;
+	--cloud-grey: #cccccc;
+	--outline-grey: #dddddd;
+	--wispy-grey: #eaeaea;
+	--ice-grey: #f5f5f5;
+	--ice-grey-darken: #e6e6e6;
+	--market-orange: #c96101;
+	--info: #217ae2;
+	--warn: #eec201;
+	--success: #289c28;
+}

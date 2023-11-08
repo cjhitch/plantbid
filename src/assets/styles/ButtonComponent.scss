@@ -1,0 +1,255 @@
+/* BUTTONS - Check on -moz-focus-inner issues */
+
+/*
+  .button::-moz-focus-inner {
+    padding:0 !important;
+    border: 0 none !important;
+  }
+  */
+a,
+span,
+button {
+	&.dk-file__link {
+		color: var(--link-blue);
+		padding: 0;
+		min-width: min-content;
+		text-transform: none;
+		font-size: 13px;
+		font-weight: bold;
+	}
+
+	&.dk-btn,
+	&.dk-btn__primary,
+	&.dk-btn__alternate,
+	&.dk-btn__secondary,
+	&.button,
+	&.btn {
+		appearance: none;
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		text-decoration: none;
+		font-weight: bold;
+		box-sizing: border-box;
+		background-color: #fff;
+		color: #fff;
+		display: inline-block;
+		font-size: 13px;
+		line-height: 1;
+		padding: 8px 24px;
+		margin: 5px 8px;
+		margin-left: 0;
+		margin-right: 16px;
+		min-width: 101px;
+		text-align: center;
+		border-radius: 100px;
+		transition: all 150ms ease-out;
+		cursor: pointer;
+		outline: none;
+		border-color: transparent;
+		border-width: 1px;
+		border-style: solid;
+		text-transform: none;
+		&:focus {
+			outline: none;
+		}
+		&:active {
+			box-shadow: none;
+		}
+		&:disabled,
+		&.dk-btn.disabled,
+		&.disabled.dk-btn__primary,
+		&.disabled.dk-btn__alternate,
+		&.disabled.dk-btn__secondary,
+		&.disabled.button,
+		&.disabled.btn {
+			pointer-events: none;
+			color: #cccccc;
+			color: var(--cloud-grey);
+			border: none;
+			background-color: #eaeaea;
+			background-color: var(--wispy-grey);
+			box-shadow: inset 0 0 0 2px #cccccc;
+			box-shadow: inset 0 0 0 2px var(--cloud-grey);
+		}
+	}
+
+	&.dk-btn__link {
+		color: var(--red);
+		border-width: 0px !important;
+		background-color: transparent;
+		box-shadow: none !important;
+		padding-left: 0;
+		padding-right: 0;
+		min-width: 101px;
+		min-width: min-content;
+		&.dk-btn__primary {
+			color: var(--red);
+		}
+	}
+
+	&.dk-btn--lg {
+		min-width: 120px !important;
+		padding: 12px 40px !important;
+		border-radius: 22px;
+	}
+
+	&.dk-btn--sm {
+		padding: 5px 18px !important;
+		font-size: 0.858em !important;
+		min-width: 80px !important;
+	}
+
+	&.dk-btn--block {
+		display: block;
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	&.dk-btn__primary {
+		background-color: #ff2100;
+		background-color: var(--red);
+		&:hover,
+		&.hover-primary {
+			background-color: #a20000;
+			background-color: var(--red--hover);
+		}
+		&:active {
+			background-color: #890000;
+			background-color: var(--red--clicked);
+		}
+	}
+
+	&.dk-btn__alternate {
+		border-color: #ff2100;
+		border-color: var(--red);
+		box-shadow: inset 0 0 0 2px #ff2100;
+		box-shadow: inset 0 0 0 2px var(--red);
+		background-color: #fff;
+		color: #ff2100;
+		color: var(--red);
+		&:hover,
+		&.hover {
+			box-shadow: inset 0 0 0 2px #a20000;
+			box-shadow: inset 0 0 0 2px var(--red--hover);
+			background-color: #a20000;
+			background-color: var(--red--hover);
+			color: #fff;
+		}
+	}
+
+	&.dk-btn__secondary {
+		border-color: #cccccc;
+		border-color: var(--cloud-grey);
+		box-shadow: inset 0 0 0 2px #cccccc;
+		box-shadow: inset 0 0 0 2px var(--cloud-grey);
+		color: #1a1552;
+		color: var(--blurple-blue);
+		&:hover,
+		&.hover {
+			background: #f5f5f5;
+		}
+	}
+
+	&.dk-btn__selectable {
+		padding: 5px 18px 5px 10px;
+		border: 2px solid transparent !important;
+		box-shadow: 0px 0px 0px 1px var(--cloud-grey);
+		transition: box-shadow 0.2s ease;
+		border-radius: 6px;
+		cursor: pointer;
+		&:active,
+		&:hover,
+		&.selected {
+			box-shadow: 0 0 0 2px var(--blurple-blue);
+			background: none;
+		}
+		&.selected {
+			position: relative;
+			display: inline-block;
+			&::after {
+				content: '';
+				position: absolute;
+				top: -2px;
+				left: -2px;
+				border-right: 16px solid transparent;
+				border-top: 16px solid var(--blurple-blue);
+			}
+		}
+	}
+
+	/* Icon Buttons */
+
+	/* STILL NEEDS THE OTHER BUTTON CLASSES ADDED INTO THE FOLLOWING BUTTON SETS */
+
+	&[class*='btn'][class*='icon-'] {
+		display: inline-flex;
+		align-items: center;
+		padding: 8px 24px 8px 14px;
+	}
+
+	&[class*='btn'][class*='icon-']:before {
+		font-size: 2rem;
+		padding: 4px 8px 0px 4px;
+	}
+
+	&[class*='btn'][class*='icon-'].icon__after {
+		flex-direction: row-reverse;
+		padding: 8px 14px 8px 24px;
+	}
+
+	&[class*='btn'][class*='icon-'].icon__after:before {
+		padding: 4px 4px 0px 8px;
+	}
+
+	/**
+	* Legacy Classes
+	*/
+
+	&.button.primary:not(.disabled),
+	&.btn.primary {
+		background-color: #cc0000;
+	}
+
+	&.button.primary:hover,
+	&.btn.primary:hover {
+		background-color: #a30000;
+	}
+
+	&.button:not(.primary):not(.disabled),
+	&.btn:not(.primary) {
+		box-shadow: inset 0 0 0 2px #cccccc;
+		color: #1a1552;
+	}
+
+	&.button:not(.primary):hover,
+	&.btn:hover {
+		background: #f5f5f5;
+	}
+
+	&.button:disabled,
+	&.button.disabled {
+		pointer-events: none;
+		color: #cccccc;
+		background-color: white;
+		box-shadow: inset 0 0 0 2px #cccccc;
+	}
+	&.dk-btn__secondary.shippingRate:active,
+	&.dk-btn__secondary.shippingRate:hover,
+	&.dk-btn__secondary.shippingRate.selected {
+		box-shadow: 0px 0px 0px 2px #1a1552;
+		background: none;
+	}
+	&.dk-btn--icon {
+		min-width: 0;
+		padding-left: 8px;
+		padding-right: 1px;
+	}
+
+	&.dk-btn__secondary,
+	&.dk-btn__alternate,
+	&.dk-btn__primary {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+}
