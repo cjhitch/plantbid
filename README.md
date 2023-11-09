@@ -1,4 +1,4 @@
-This is the nextjs template for dk plus
+This is the nextjs template
 
 ## Getting Started
 
@@ -6,11 +6,11 @@ To install start by pulling the repository onto your local machine. This can be 
 You may also run the following command in the folder of your choosing.
 
 For Best results you should clone this with renaming to match what it is being used for ie.  
-`git clone https://digikey@dev.azure.com/digikey/DK%20Plus/_git/dk_plus_next_template ConfigurablePart.SpaceshipBuilder.App`
+`git clone git@github.com:cjhitch/next_template.git new.repo`
 
 ```
-dk_plus_next_template
-git clone https://digikey@dev.azure.com/digikey/DK%20Plus/_git/dk_plus_next_template
+next_template
+git clone git@github.com:cjhitch/next_template.git
 ```
 
 ### Prerequisites
@@ -28,8 +28,8 @@ This may also be installed alternatively using zsh or homebrew (on macs)
 After ensuring the computer is set up with your base requirements, from the folder you cloned into:
 
 ```
-dk_plus_next_template
-cd dk_plus_next_template
+next_template
+cd next_template
 ```
 
 Now time to install the packages - this command will install base packages, React client-side, and server packages. It also sets up the pre-commit hook
@@ -140,7 +140,7 @@ This is in line with how React does imports.
 
 ## Contributing
 
-Currently all members of the DK Plus team are contributing to this project
+
 
 ## Versioning
 
@@ -148,7 +148,7 @@ Versioning should be updated each time there is an edit
 
 ## Authors
 
--   **DK Plus Team**
+-   **Chris Hitchcock**
 
 ## Acknowledgments
 

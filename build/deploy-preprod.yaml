@@ -15,10 +15,10 @@ app:
         limits:
             cpu: 3
             memory: 256
-    name: dk_plus_next_template
-    domain: DP
-    role: trf
-    group: dkplus
+    name: next_template
+    domain: 
+    role: 
+    group: 
     version: 0
     container:
-        image: dkplus/dk_plus_next_template
+        image: next_template

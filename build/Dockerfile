@@ -1,7 +1,7 @@
 FROM docker.digikey.us/devops/node:18
 
-LABEL name="dk plus next js template"
-LABEL maintainer="dl_IT_DK_Plus_Devs@digikey.com"
+LABEL name="next js template"
+LABEL maintainer=""
 
 WORKDIR /usr/src/app
 

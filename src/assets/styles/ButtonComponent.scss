@@ -9,7 +9,7 @@
 a,
 span,
 button {
-	&.dk-file__link {
+	&.file__link {
 		color: var(--link-blue);
 		padding: 0;
 		min-width: min-content;
@@ -18,10 +18,10 @@ button {
 		font-weight: bold;
 	}
 
-	&.dk-btn,
-	&.dk-btn__primary,
-	&.dk-btn__alternate,
-	&.dk-btn__secondary,
+	&.btn,
+	&.btn__primary,
+	&.btn__alternate,
+	&.btn__secondary,
 	&.button,
 	&.btn {
 		appearance: none;
@@ -56,10 +56,10 @@ button {
 			box-shadow: none;
 		}
 		&:disabled,
-		&.dk-btn.disabled,
-		&.disabled.dk-btn__primary,
-		&.disabled.dk-btn__alternate,
-		&.disabled.dk-btn__secondary,
+		&.btn.disabled,
+		&.disabled.btn__primary,
+		&.disabled.btn__alternate,
+		&.disabled.btn__secondary,
 		&.disabled.button,
 		&.disabled.btn {
 			pointer-events: none;
@@ -73,7 +73,7 @@ button {
 		}
 	}
 
-	&.dk-btn__link {
+	&.btn__link {
 		color: var(--red);
 		border-width: 0px !important;
 		background-color: transparent;
@@ -82,31 +82,31 @@ button {
 		padding-right: 0;
 		min-width: 101px;
 		min-width: min-content;
-		&.dk-btn__primary {
+		&.btn__primary {
 			color: var(--red);
 		}
 	}
 
-	&.dk-btn--lg {
+	&.btn--lg {
 		min-width: 120px !important;
 		padding: 12px 40px !important;
 		border-radius: 22px;
 	}
 
-	&.dk-btn--sm {
+	&.btn--sm {
 		padding: 5px 18px !important;
 		font-size: 0.858em !important;
 		min-width: 80px !important;
 	}
 
-	&.dk-btn--block {
+	&.btn--block {
 		display: block;
 		width: 100%;
 		margin-left: 0;
 		margin-right: 0;
 	}
 
-	&.dk-btn__primary {
+	&.btn__primary {
 		background-color: #ff2100;
 		background-color: var(--red);
 		&:hover,
@@ -120,7 +120,7 @@ button {
 		}
 	}
 
-	&.dk-btn__alternate {
+	&.btn__alternate {
 		border-color: #ff2100;
 		border-color: var(--red);
 		box-shadow: inset 0 0 0 2px #ff2100;
@@ -138,7 +138,7 @@ button {
 		}
 	}
 
-	&.dk-btn__secondary {
+	&.btn__secondary {
 		border-color: #cccccc;
 		border-color: var(--cloud-grey);
 		box-shadow: inset 0 0 0 2px #cccccc;
@@ -151,7 +151,7 @@ button {
 		}
 	}
 
-	&.dk-btn__selectable {
+	&.btn__selectable {
 		padding: 5px 18px 5px 10px;
 		border: 2px solid transparent !important;
 		box-shadow: 0px 0px 0px 1px var(--cloud-grey);
@@ -234,21 +234,21 @@ button {
 		background-color: white;
 		box-shadow: inset 0 0 0 2px #cccccc;
 	}
-	&.dk-btn__secondary.shippingRate:active,
-	&.dk-btn__secondary.shippingRate:hover,
-	&.dk-btn__secondary.shippingRate.selected {
+	&.btn__secondary.shippingRate:active,
+	&.btn__secondary.shippingRate:hover,
+	&.btn__secondary.shippingRate.selected {
 		box-shadow: 0px 0px 0px 2px #1a1552;
 		background: none;
 	}
-	&.dk-btn--icon {
+	&.btn--icon {
 		min-width: 0;
 		padding-left: 8px;
 		padding-right: 1px;
 	}
 
-	&.dk-btn__secondary,
-	&.dk-btn__alternate,
-	&.dk-btn__primary {
+	&.btn__secondary,
+	&.btn__alternate,
+	&.btn__primary {
 		padding-top: 10px;
 		padding-bottom: 10px;
 	}

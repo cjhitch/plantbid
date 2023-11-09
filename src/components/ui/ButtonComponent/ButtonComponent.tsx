@@ -34,7 +34,7 @@ const ButtonComponent: FC<Props> = ({
 			data-testid={testId || BUTTON_COMPONENT_TESTID}
 			className={`${BUTTON_VARIANT_BUTTON_CLASSNAME_ENUM_MAP[variant]} ${
 				className || ''
-			} ${size ? `dk-btn--${size}` : ''} `}
+			} ${size ? `btn--${size}` : ''} `}
 			{...rest}
 		>
 			{/* {icon && <IconComponent className="mr-1 text-2xl" variant={icon} />} */}

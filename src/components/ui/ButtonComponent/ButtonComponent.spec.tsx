@@ -26,7 +26,7 @@ describe('ButtonComponent', () => {
 			// classList exists on the child node - ts doesn't like
 			// eslint-disable-next-line
 			// @ts-expect-error
-			container.firstChild.classList.contains('dk-btn--test-size'),
+			container.firstChild.classList.contains('btn--test-size'),
 		).toBe(true);
 	});
 	it('expect to have a classname', () => {
