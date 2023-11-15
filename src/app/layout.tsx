@@ -1,13 +1,13 @@
-import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { type FC, type ReactNode } from 'react';
+import './globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-	title: 'DigiKey Marketplace',
-	description: "DigiKey's Marketplace application",
+	title: 'Next application',
+	description: 'Next application',
 	viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no',
 };
 
@@ -18,7 +18,9 @@ interface Props {
 const RootLayout: FC<Props> = ({ children }) => {
 	return (
 		<html lang="en">
-			<body className={inter.className}>{children}</body>
+			<body style={{ height: '100vh', padding: '1rem' }} className={inter.className}>
+				{children}
+			</body>
 		</html>
 	);
 };
